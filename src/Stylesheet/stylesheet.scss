@@ -1,6 +1,9 @@
+@use '../utils/resetCss';
+@use '../utils/utils';
+@use '../pages/App/app';
+
 body {
-  background-color: rgb(39, 39, 42);
-  color: white;
+  background-color: utils.$main_color;
 }
 
 li {
