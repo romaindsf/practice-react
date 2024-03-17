@@ -1,10 +1,7 @@
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
 
 export default function ChampionPage() {
-    const { championId } = useParams();
+  const { championId } = useParams()
 
-
-    return (
-      <h1>{championId}</h1>
-    )
-  }
+  return <h1>{championId}</h1>
+}

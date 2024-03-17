@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Rengar",
+    "id": "156454",
+    "description": "Rengar is a ferocious vastayan trophy hunter who lives for the thrill of tracking down and killing dangerous creatures. He scours the world for the most fearsome beasts he can find, especially seeking any trace of Kha’Zix, the void creature who scratched out his eye. Rengar stalks his prey neither for food nor glory, but for the sheer beauty of the pursuit.",
+    "dateDeSortie": "21-08-2012",
+    "compétences": {
+      "passive": "Unseen predator",
+      "q": "Savagery",
+      "w": "Battle Roar",
+      "e": "Bola Strike",
+      "r": "Thrill of the Hunt"
+    }
+  },
+  {
+    "name": "Kindred",
+    "id": "654838",
+    "description": "Separate, but never parted, Kindred represents the twin essences of death. Lamb’s bow offers a swift release from the mortal realm for those who accept their fate. Wolf hunts down those who run from their end, delivering violent finality within his crushing jaws. Though interpretations of Kindred’s nature vary across Runeterra, every mortal must choose the true face of their death.",
+    "dateDeSortie": "14-10-2015",
+    "compétences": {
+      "passive": "Mark of the Kindred",
+      "q": "Dance of Arrows",
+      "w": "Wolf's Frenzy",
+      "e": "Mounting Dread",
+      "r": "Lamb's Respite"
+    }
+  },
+  {
+    "name": "Nidalee",
+    "id": "789546",
+    "description": "Raised in the deepest jungle, Nidalee is a master tracker who can shapeshift into a ferocious cougar at will. Neither wholly woman nor beast, she viciously defends her territory from any and all trespassers, with carefully placed traps and deft spear throws. She cripples her quarry before pouncing on them in feline form—the lucky few who survive tell tales of a wild woman with razor-sharp instincts, and even sharper claws...",
+    "dateDeSortie": "17-12-2009",
+    "compétences": {
+      "passive": "Prowl",
+      "q": {
+        "human": "Javelin Toss",
+        "cougar": "Takedown"
+      },
+      "w": {
+        "human": "Bushwhack",
+        "cougar": "Pounce"
+      },
+      "e": {
+        "human": "Primal Surge",
+        "cougar": "Swipe"
+      },
+      "r": "Aspect of the Cougar"
+    }
+  }
+]
