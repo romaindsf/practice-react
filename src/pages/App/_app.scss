@@ -1,5 +1,19 @@
 @use '../../utils/utils';
 
+.sortBy {
+  display: flex;
+  gap: 20px;
+  svg {
+    font-size: 24px;
+    color: white;
+  }
+  button {
+    @include utils.font;
+    color: black;
+    border-radius: 10px;
+  }
+}
+
 ul {
   gap: 20px;
 }
@@ -7,10 +21,14 @@ ul {
 .champion__card {
   > div {
     display: flex;
-    gap: 20px;
     justify-content: space-evenly;
     align-items: center;
     @include utils.fontTitle;
+    width: 80%;
+    margin: auto;
+    padding: 20px 10px;
+    border-bottom: 2px solid grey;
+    cursor: pointer;
   }
 
   img {
@@ -19,6 +37,13 @@ ul {
   }
   &__description {
     @include utils.font;
-    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid grey;
+  }
+  a {
+    display: inline-block;
+    width: 90%;
+    text-align: end;
+    padding-top: 15px;
   }
 }

@@ -3,14 +3,16 @@ $main_color: rgb(39, 39, 42);
 @mixin fontTitle($font-size: 24px, $font-weight: 600) {
   font: {
     family: 'Playfair', serif;
-    size: 24px;
+    size: $font-size;
+    weight: $font-weight;
   }
   color: white;
 }
 @mixin font($font-size: 16px, $font-weight: 400) {
   font: {
     family: 'Source Sans 3', sans-serif;
-    size: 18px;
+    size: $font-size;
+    weight: $font-weight;
   }
   color: white;
 }

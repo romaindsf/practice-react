@@ -129,18 +129,40 @@ table {
   border-spacing: 0;
 }
 
+.sortBy {
+  display: flex;
+  gap: 20px;
+}
+.sortBy svg {
+  font-size: 24px;
+  color: white;
+}
+.sortBy button {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  color: black;
+  border-radius: 10px;
+}
+
 ul {
   gap: 20px;
 }
 
 .champion__card > div {
   display: flex;
-  gap: 20px;
   justify-content: space-evenly;
   align-items: center;
   font-family: "Playfair", serif;
   font-size: 24px;
+  font-weight: 600;
   color: white;
+  width: 80%;
+  margin: auto;
+  padding: 20px 10px;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
 }
 .champion__card img {
   width: 120px;
@@ -148,13 +170,51 @@ ul {
 }
 .champion__card__description {
   font-family: "Source Sans 3", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
-  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid grey;
+}
+.champion__card a {
+  display: inline-block;
+  width: 90%;
+  text-align: end;
+  padding-top: 15px;
+}
+
+.accueil {
+  display: inline-block;
+  width: 90%;
+  text-align: end;
+  padding-top: 15px;
 }
 
 body {
   background-color: rgb(39, 39, 42);
+}
+
+a {
+  text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Playfair", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main_container {
+  width: 90%;
+  margin: 30px auto;
 }
 
 li {

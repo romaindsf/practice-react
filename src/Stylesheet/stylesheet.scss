@@ -1,9 +1,28 @@
 @use '../utils/resetCss';
 @use '../utils/utils';
+@use '../components/Header/header';
 @use '../pages/App/app';
+@use '../pages/Champions_page/championPage';
 
 body {
   background-color: utils.$main_color;
+}
+
+a {
+  text-decoration: none;
+  @include utils.font;
+  cursor: pointer;
+}
+
+h1 {
+  @include utils.fontTitle(28px, 700);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main_container {
+  width: 90%;
+  margin: 30px auto;
 }
 
 li {
