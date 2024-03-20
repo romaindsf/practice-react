@@ -27,9 +27,7 @@ export default function SearchBar({
         onChange={handleChange}
         value={inputValue}
       />
-      <button type="submit">
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
-      </button>
+      <FontAwesomeIcon icon={faMagnifyingGlass} />
     </form>
   )
 }

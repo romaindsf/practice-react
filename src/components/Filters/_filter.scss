@@ -20,14 +20,5 @@
     color: black;
     border-radius: 7px;
     border: none;
-
-    &[type='submit'] {
-      background-color: transparent;
-      position: relative;
-      right: 30px;
-    }
-  }
-  input {
-    width: 100px;
   }
 }

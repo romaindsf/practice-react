@@ -1,0 +1,14 @@
+.search_bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  input {
+    width: 100px;
+    position: relative;
+    left: 20px;
+  }
+  svg {
+    background-color: transparent;
+    z-index: 2;
+  }
+}
