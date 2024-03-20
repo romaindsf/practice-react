@@ -131,19 +131,35 @@ table {
 
 .sortBy {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 50px 0 25px 0;
 }
-.sortBy svg {
+.sortBy__icons {
+  display: flex;
   font-size: 24px;
   color: white;
+  gap: 15px;
 }
-.sortBy button {
+.sortBy button,
+.sortBy input {
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: white;
   color: black;
-  border-radius: 10px;
+  border-radius: 7px;
+  border: none;
+}
+.sortBy button[type=submit],
+.sortBy input[type=submit] {
+  background-color: transparent;
+  position: relative;
+  right: 30px;
+}
+.sortBy input {
+  width: 100px;
 }
 
 ul {

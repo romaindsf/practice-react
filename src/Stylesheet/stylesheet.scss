@@ -1,7 +1,8 @@
 @use '../utils/resetCss';
 @use '../utils/utils';
 @use '../components/Header/header';
-@use '../pages/App/app';
+@use '../components/Filters/filter';
+@use '../pages/HomePage/homePage';
 @use '../pages/Champions_page/championPage';
 
 body {

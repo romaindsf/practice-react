@@ -1,19 +1,5 @@
 @use '../../utils/utils';
 
-.sortBy {
-  display: flex;
-  gap: 20px;
-  svg {
-    font-size: 24px;
-    color: white;
-  }
-  button {
-    @include utils.font;
-    color: black;
-    border-radius: 10px;
-  }
-}
-
 ul {
   gap: 20px;
 }

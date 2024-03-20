@@ -1,6 +1,6 @@
 import ChampionsList from '../../data/Champions_list.json'
 import { ChampionCard } from '../../components/Thumbnail/Thumbnail'
-import SortByName from '../../components/Filters/Filter'
+import SortList from '../../components/Filters/Filter'
 import { useState } from 'react'
 
 export default function App() {
@@ -10,15 +10,16 @@ export default function App() {
       name: champion.name,
       image: champion.image,
       description: champion.description,
+      favorite: champion.favorite,
     }))
   )
 
   return (
     <div className="main_container">
       <h1>Les meilleurs champions !</h1>
-      <SortByName
+      <SortList
         arrayData={arrayDataThumbnail}
-        setarrayData={setarrayDataThumbnail}
+        setArrayData={setarrayDataThumbnail}
         originalArrayData={ChampionsList}
       />
       <ul>

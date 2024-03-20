@@ -1,15 +1,29 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSort } from '@fortawesome/free-solid-svg-icons'
+import { faSort, faStar } from '@fortawesome/free-solid-svg-icons'
+import SearchBar from '../SearchBar/SearchBar'
 
-export default function SortByName({
+export default function SortList({
   arrayData,
-  setarrayData,
+  setArrayData,
   originalArrayData,
 }) {
-  const [indice, setIndice] = useState('')
+  const [indice, setIndice] = useState('default')
+
+  const resetOrder = () => {
+    setIndice('default')
+    setArrayData(
+      originalArrayData.map((champion) => ({
+        id: champion.id,
+        name: champion.name,
+        image: champion.image,
+        description: champion.description,
+        favorite: champion.favorite,
+      }))
+    )
+  }
   const sortByName = () => {
-    indice === ''
+    indice === 'default'
       ? setIndice('A-Z')
       : indice === 'A-Z'
       ? setIndice('Z-A')
@@ -19,24 +33,24 @@ export default function SortByName({
         ? a.name.localeCompare(b.name)
         : b.name.localeCompare(a.name)
     )
-    setarrayData(sortedArray)
-    console.log(indice)
+    setArrayData(sortedArray)
   }
-  const resetOrder = () => {
-    setIndice(0)
-    setarrayData(
-      originalArrayData.map((champion) => ({
-        id: champion.id,
-        name: champion.name,
-        image: champion.image,
-        description: champion.description,
-      }))
-    )
+  const sortByFavorite = () => {
+    setIndice('favorite')
+    setArrayData([...arrayData].sort((a, b) => a.favorite - b.favorite))
   }
   return (
     <div className="sortBy">
-      <button onClick={resetOrder}>Reset order</button>
-      <FontAwesomeIcon icon={faSort} onClick={sortByName} />
+      <div className="sortBy__icons">
+        <button onClick={resetOrder}>Reset</button>
+        <FontAwesomeIcon icon={faSort} onClick={sortByName} />
+        <FontAwesomeIcon icon={faStar} onClick={sortByFavorite} />
+      </div>
+      <SearchBar
+        arrayData={arrayData}
+        setArrayData={setArrayData}
+        originalArrayData={originalArrayData}
+      />
     </div>
   )
 }

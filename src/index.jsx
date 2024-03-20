@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './Stylesheet/stylesheet.css'
-import App from './pages/App/index.jsx'
+import App from './pages/HomePage/index.jsx'
 import ChampionPage from './pages/Champions_page/index.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))

@@ -1,0 +1,33 @@
+@use '../../utils/utils';
+
+.sortBy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 50px 0 25px 0;
+
+  &__icons {
+    display: flex;
+    font-size: 24px;
+    color: white;
+    gap: 15px;
+  }
+
+  button,
+  input {
+    @include utils.font;
+    color: black;
+    border-radius: 7px;
+    border: none;
+
+    &[type='submit'] {
+      background-color: transparent;
+      position: relative;
+      right: 30px;
+    }
+  }
+  input {
+    width: 100px;
+  }
+}
