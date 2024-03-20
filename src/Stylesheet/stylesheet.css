@@ -152,18 +152,6 @@ table {
   border-radius: 7px;
   border: none;
 }
-.sortBy button[type=submit],
-.sortBy input[type=submit] {
-  background-color: transparent;
-  position: relative;
-  right: 30px;
-}
-.sortBy .search_bar {
-  margin-left: auto;
-}
-.sortBy .search_bar input {
-  width: 100px;
-}
 
 .search_bar {
   display: flex;
